@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My RGB</title>
+    <link href="Css/Style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="document">
+      <header class="m-3">
+        <h1>RBG Controller</h1>
+      </header>
+      <main>
+        <div class="d-flex form-inline inputGroup">
+          <label for="rangeRed" class="label" id="labelRed">(R) RED:</label>
+          <input
+            type="range"
+            class="custom-range inputRange"
+            id="rangeRed"
+            min="0"
+            max="255"
+          />
+          <input
+            class="text-center inputText"
+            type="text"
+            id="inputRed"
+            disabled
+          />
+        </div>
+
+        <div class="d-flex form-inline inputGroup">
+          <label for="rangeGreen" class="label" id="labelGreen"
+            >(G) GREEN:</label
+          >
+          <input
+            type="range"
+            class="custom-range inputRange"
+            id="rangeGreen"
+            min="0"
+            max="255"
+          />
+          <input
+            class="text-center inputText"
+            type="text"
+            id="inputGreen"
+            disabled
+          />
+        </div>
+
+        <div class="d-flex form-inline inputGroup">
+          <label for="rangeBlue" class="label" id="labelBlue">(B) BLUE:</label>
+          <input
+            type="range"
+            class="custom-range inputRange"
+            id="rangeBlue"
+            min="0"
+            max="255"
+          />
+          <input
+            class="text-center inputText"
+            type="text"
+            id="inputBlue"
+            disabled
+          />
+        </div>
+      </main>
+      <div class="div_color" id="divColor"></div>
+    </div>
+  </body>
+  <script src="./JavaScript/Script.js"></script>
+</html>
